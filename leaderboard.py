@@ -52,7 +52,7 @@ def get_leaderboard(game, histories):
 		b = a + ":"
 		while len(b) < length:
 			b += " "
-		res += b + " " + str(sums[a]) + " | " + str(round(sums[a]/float(rounds), 1)) + "\n"
+		res += b + " " + str(sums[a]) + " | " + str(round(sums[a]/float(rounds), 2)) + "\n"
 	return res 
 
 # function make_payoff_history
